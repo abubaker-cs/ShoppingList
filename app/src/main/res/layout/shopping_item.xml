@@ -9,7 +9,7 @@
     android:padding="16dp"
     >
 
-
+    <!-- Name -->
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-
+    <!-- Amount -->
     <TextView
         android:id="@+id/tvAmount"
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-
+    <!-- Icon: Delete -->
     <ImageView
         android:id="@+id/ivDelete"
         android:layout_width="35dp"
@@ -50,6 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvName"
         />
 
+    <!-- Icon: + -->
     <ImageView
         android:id="@+id/ivPlus"
         android:layout_width="35dp"
@@ -63,6 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvAmount"
         />
 
+    <!-- Icon: - -->
     <ImageView
         android:id="@+id/ivMinus"
         android:layout_width="35dp"
