@@ -1,4 +1,4 @@
-package org.abubaker.shoppinglist.entity
+package org.abubaker.shoppinglist.data.db.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
