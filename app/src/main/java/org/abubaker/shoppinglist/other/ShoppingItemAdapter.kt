@@ -13,16 +13,17 @@ class ShoppingItemAdapter(
     private val viewModel: ShoppingViewModel
 ) : RecyclerView.Adapter<ShoppingItemAdapter.ShoppingViewHolder>() {
 
+    // ShoppingViewHolder
+    inner class ShoppingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+
+    // onCreateViewHolder()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShoppingViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.shopping_item, parent, false)
         return ShoppingViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
-
+    // onBindViewHolder()
     override fun onBindViewHolder(holder: ShoppingViewHolder, position: Int) {
         val curShoppingItem = items[position]
 
@@ -46,5 +47,8 @@ class ShoppingItemAdapter(
         }
     }
 
-    inner class ShoppingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    // Total Number of Rows?
+    override fun getItemCount(): Int {
+        return items.size
+    }
 }
