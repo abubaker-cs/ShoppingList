@@ -1,7 +1,8 @@
-package org.abubaker.shoppinglist
+package org.abubaker.shoppinglist.ui.shoppinglist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import org.abubaker.shoppinglist.R
 
 class ShoppingActivity : AppCompatActivity() {
 
