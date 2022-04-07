@@ -21,8 +21,9 @@ class AddShoppingItemDialog(context: Context, var addDialogListener: AddDialogLi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
-        
+
         // Inflate Layout (XML)
+        // Ref: https://riptutorial.com/android/example/21674/databinding-in-dialog
         binding = DataBindingUtil.inflate(
             LayoutInflater.from(context),
             R.layout.dialog_add_shopping_item,
