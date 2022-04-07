@@ -16,6 +16,7 @@
         tools:context=".ui.shoppinglist.ShoppingActivity"
         >
 
+        <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvShoppingItems"
             android:layout_width="match_parent"
@@ -26,10 +27,12 @@
             app:layout_constraintTop_toTopOf="parent"
             />
 
+        <!-- FAB -->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/fab_desc"
             android:src="@drawable/ic_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

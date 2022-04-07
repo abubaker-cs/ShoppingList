@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ShoppingList</string>
+    <string name="fab_desc">Add new shopping item</string>
 </resources>
