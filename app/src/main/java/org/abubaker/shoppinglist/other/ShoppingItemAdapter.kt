@@ -25,6 +25,7 @@ class ShoppingItemAdapter(
         val tvName = view.tvName
         val tvAmount = view.tvAmount
 
+        // Notes
         val ivDelete = view.ivDelete
         val ivPlus = view.ivPlus
         val ivMinus = view.ivMinus
